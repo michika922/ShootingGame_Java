@@ -16,23 +16,28 @@ public class Player extends Character implements KeyListener{
 	public void keyPressed(KeyEvent e) {
 		if(e.getKeyCode()==KeyEvent.VK_LEFT) {
 			vx=-5;
+			vy=-5;
 		}
 		if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
 			vx=5;
+			vy=5;
 		 	}
 		if(e.getKeyCode()==KeyEvent.VK_SPACE) {
 			GameWorld.playerBullets.add(
 				new PlayerBullet(x,y,0,-10));
 				System.out.println("弾の数="+GameWorld.playerBullets.size());
+				
 			}
 		
 		}
 		public void KeyReleased(KeyEvent e) {
 			if(e.getKeyCode()==KeyEvent.VK_LEFT) {
 				vx=0;
+				vy=0;
 		}
 			if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
 				vx=0;
+				vy=0;
 			}
 		}
 			public void KeyTyped(KeyEvent e) {
