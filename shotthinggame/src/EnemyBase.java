@@ -11,6 +11,7 @@ public class EnemyBase extends Enemy {
 		f.fillOval(x - 16, y + 8, 64, 16);
 	}
 
+	
 	public void move() {
 		super.move();
 		if (x > 300)
