@@ -94,6 +94,7 @@ public class GameFrame extends MyFrame {
 			}
 
 		}
+<<<<<<< HEAD
 	}
 
 	public void checkPlayerBulletsAndEnemies() {
@@ -123,6 +124,13 @@ public class GameFrame extends MyFrame {
 			} else {
 
 				i++;
+=======
+		public boolean checkHit(Character a,Character b) {
+			if(Math.abs(a.x-b.x)<=10&&Math.abs(a.y-b.y)<=10){
+				return true;
+			}else {
+				return false;
+>>>>>>> practice12
 			}
 		}
 	}
